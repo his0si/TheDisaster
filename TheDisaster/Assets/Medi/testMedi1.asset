@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3d32a04553f0b4458c7c6b5f217350a, type: 3}
-  m_Name: New Medi 2
+  m_Name: testMedi1
   m_EditorClassIdentifier: 
-  mediCode: 1
-  mediName: "\uD14C\uC2A4\uD2B8\uD22C"
-  shortDescription: "\uB450\uBC88\uC9F8 \uC57D\uC774\uB2E4"
+  mediCode: 0
+  mediName: "\uD14C\uC2A4\uD2B8\uC6D0"
+  shortDescription: "\uCCAB\uBC88\uC9F8 \uC57D\uC774\uB2E4"
   longDescription: 
   image: {fileID: 0}
-  firstMatCode: 2
-  secondMatCode: 2
+  firstMatCode: 0
+  secondMatCode: 1
