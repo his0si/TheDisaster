@@ -11,7 +11,7 @@ public class Medi : ScriptableObject
     public string mediName;
     public string shortDescription;
     public string longDescription;
-    public Image image;
+    public Sprite sprite;
     public int firstMatCode;
     public int secondMatCode;
 }
