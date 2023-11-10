@@ -36,6 +36,7 @@ public class MediManager : MonoBehaviour
         }
         makedMedi = mediRecipe.makeMedi(selectedMaterial[0], selectedMaterial[1]);
         Debug.Log(makedMedi.name);
+        ResetMaterials();
         // 컬렉션 잠금 해제
         // 해당 약 의뢰 스크립트에 넘김
     }
