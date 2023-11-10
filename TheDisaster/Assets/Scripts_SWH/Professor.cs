@@ -40,4 +40,20 @@ public class Professor : MonoBehaviour
         answer2.SetActive(false);
     }
 
+    public void CompareMedi()
+    {
+        Debug.Log("버튼");
+        MediManager mediManager = GameObject.Find("MediManager").GetComponent<MediManager>();
+        Demands demandMedi = GameObject.Find("Demand").GetComponent<Demands>();
+
+        if(mediManager.makedMedi.name == demandMedi.mediNum.ToString())
+        {
+            Debug.Log("조합 성공!");
+        }
+        else
+        {
+            Debug.Log("조합 실패!");
+        }
+    }
+
 }
