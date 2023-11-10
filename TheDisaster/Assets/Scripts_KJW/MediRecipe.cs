@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class MediRecipe : MonoBehaviour
 {
-    private MediManager mediManager;
+    public Medi[] medisList;
 
     private void Start()
     {
-        mediManager = GameObject.Find("MediManager").GetComponent<MediManager>();
     }
 
+    public Medi makeMedi(int first, int second)
+    {
+        Medi result = null;
 
-    // 첫번째 재료 -> 두번째 재료 존재 여부로 묻는 이차원 배열
+        if(first == 0)
+        {
+            if(second == 0) { result = medisList[0]; }
+            if(second == 1) { result = medisList[0]; } 
+            if(second == 2) { result = medisList[0]; }
+            if(second == 3) { result = medisList[0]; }
+            if(second == 4) { result = medisList[0]; }
+            if(second == 5) { result = medisList[0]; }
+        }
 
-
-    // 재료가 배열에 있는지 확인
+        return result;
+    }
 }
