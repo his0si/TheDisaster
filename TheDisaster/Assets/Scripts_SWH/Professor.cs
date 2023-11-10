@@ -20,6 +20,8 @@ public class Professor : MonoBehaviour
     {
         
     }
+
+    //처음에 말풍선 생성
     IEnumerator ShowDemandText()
     {
         yield return new WaitForSeconds(2.0f);
@@ -29,4 +31,13 @@ public class Professor : MonoBehaviour
         answer1.SetActive(true);
         answer2.SetActive(true);
     }
+
+    //요구 수락 했을 시 말풍선 제거
+    public void InactiveDemandUI()
+    {
+        //demand.SetActive(false);
+        answer1.SetActive(false);
+        answer2.SetActive(false);
+    }
+
 }

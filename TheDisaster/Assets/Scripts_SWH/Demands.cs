@@ -18,11 +18,6 @@ public class Demands : MonoBehaviour
         demandText.text = medi[mediNum].demands[demandCount];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void PrintDemands()
     {
         demandCount++;
@@ -38,8 +33,9 @@ public class Demands : MonoBehaviour
         }
     }
 }
+
 [System.Serializable]
 public class DemandsText
-{
+{   
     public string[] demands;
 }
