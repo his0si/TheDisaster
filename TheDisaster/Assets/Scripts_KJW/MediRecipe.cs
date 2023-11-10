@@ -6,10 +6,6 @@ public class MediRecipe : MonoBehaviour
 {
     public Medi[] medisList = new Medi[21];
 
-    private void Start()
-    {
-    }
-
     public Medi makeMedi(int first, int second)
     {
         Medi result = null;
