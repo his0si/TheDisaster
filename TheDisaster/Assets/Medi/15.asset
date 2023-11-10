@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 15
   m_EditorClassIdentifier: 
   mediCode: 15
-  mediName: 
-  shortDescription: 
+  mediName: "\uC218\uBA74\uC81C"
+  shortDescription: "7\uC2DC\uAC04 \uC9C8 \uC88B\uC740 \uC219\uBA74\uC744 \uBCF4\uC7A5\uD569\uB2C8\uB2E4."
   longDescription: 
   sprite: {fileID: 0}

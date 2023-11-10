@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mediCode: 4
   mediName: "\uB0B4\uAE30\uD560 \uB54C \uB4DC\uC138\uC694"
-  shortDescription: 
+  shortDescription: "\uAC00\uC704\uBC14\uC704\uBCF4\uC5D0\uC11C 95\uD37C\uC13C\uD2B8
+    \uD655\uB960\uB85C \uC2B9\uB9AC\uD569\uB2C8\uB2E4."
   longDescription: 
   sprite: {fileID: 0}
