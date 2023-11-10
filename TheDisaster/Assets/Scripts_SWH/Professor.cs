@@ -42,7 +42,6 @@ public class Professor : MonoBehaviour
 
     public void CompareMedi()
     {
-        Debug.Log("¹öÆ°");
         MediManager mediManager = GameObject.Find("MediManager").GetComponent<MediManager>();
         Demands demandMedi = GameObject.Find("Demand").GetComponent<Demands>();
 
