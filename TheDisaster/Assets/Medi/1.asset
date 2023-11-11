@@ -21,4 +21,4 @@ MonoBehaviour:
     \uC131\uB300 \uADFC\uC721 \uC870\uC808 \uD6A8\uACFC\uB3C4 \uC788\uC5B4 \uBAA9\uC18C\uB9AC\uB3C4
     \uCEE4\uC9D1\uB2C8\uB2E4.  \uBC1C\uD45C\uB97C \uC55E\uB454 \uC0AC\uB78C\uB4E4\uC774
     \uB9CE\uC774 \uCC3E\uB294 \uC57D\uC785\uB2C8\uB2E4."
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: b3d732d2018cca0479d5e30c11b5bb30, type: 3}
