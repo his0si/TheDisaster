@@ -9,12 +9,19 @@ public class MediManager : MonoBehaviour
     public Medi makedMedi;
     public int[] selectedMaterial = new int[2];
     public Text[] selectedText;
+    public GameObject makingAni;
 
+    private Image makedMediImg;
+    private Text makedMediName;
+    private Text makedMediDiscription;
 
     private void Start()
     {
         ResetMaterials();
         mediRecipe = GetComponent<MediRecipe>();
+        makedMediImg = makingAni.transform.GetChild(3).GetChild(0).GetComponent<Image>();
+        makedMediName = makingAni.transform.GetChild(3).GetChild(1).GetComponent<Text>();
+        makedMediDiscription = makingAni.transform.GetChild(3).GetChild(2).GetComponent<Text>();
     }
 
     //리셋
@@ -44,9 +51,12 @@ public class MediManager : MonoBehaviour
         //{
         //    Debug.Log(PlayerPrefs.GetInt(mediRecipe.medisList[i].name));
         //}
-        
+
 
         // 만들기 애니메이션 Start
-        // 해당 약 의뢰 스크립트에 넘김
+        makingAni.SetActive(true);
+        makedMediImg.sprite = makedMedi.sprite;
+        makedMediName.text = makedMedi.mediName;
+        makedMediDiscription.text = makedMedi.shortDescription;
     }
 }
