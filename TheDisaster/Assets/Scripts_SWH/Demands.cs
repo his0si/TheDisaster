@@ -21,7 +21,7 @@ public class Demands : MonoBehaviour
     {
         demandText.text = "자네, 나 뭐 하나만 만들어줘";
         answer1Text.text = "네.. 뭐..";
-        answer2Text.text = "그건 어려울 것 같습니다 교수님";
+        answer2Text.text = "그건 좀 어려울 것 같습니다 교수님";
         demandCount = 0;
         mediNum = Random.Range(0, medi.Length);
         //demandText.text = medi[mediNum].demands[demandCount];

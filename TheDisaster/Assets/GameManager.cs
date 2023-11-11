@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         totalScore = 0.0f;
+        demandNum = 0;
         fadePanel = transform.GetChild(0).GetChild(0).GetComponent<Image>();
         if (_instance == null)
         {
