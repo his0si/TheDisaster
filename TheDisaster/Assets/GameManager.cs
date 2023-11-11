@@ -53,18 +53,22 @@ public class GameManager : MonoBehaviour
     {
         if(demandNum == 3)
         {
-            FadeOut();
-            SceneManager.LoadScene("Day2");
+            LoadScene("Day2");
         }
         if(demandNum == 6) 
         {
-            FadeOut();
-            SceneManager.LoadScene("Day3");
+            LoadScene("Day3");
         }
         if (demandNum == 9)
         {
-            SceneManager.LoadScene("Ending");
+            LoadScene("Ending");
         }
+    }
+
+    public void LoadScene(string sceneName) 
+    {
+        FadeOut();
+        SceneManager.LoadScene(sceneName);
     }
 
     public void FadeOut()
