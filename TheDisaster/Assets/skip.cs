@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Skip : MonoBehaviour
+public class skip : MonoBehaviour
 {
-    public void SkipToMainScene()
+    public void skipToMainScene()
     {
         SceneManager.LoadScene("Main");
     }

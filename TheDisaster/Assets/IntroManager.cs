@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class IntroManager : MonoBehaviour
 {
@@ -28,6 +29,9 @@ public class IntroManager : MonoBehaviour
             // Add a 1-second gap between texts
             yield return new WaitForSeconds(gapTime);
         }
+
+        // After all texts are displayed, skip to the main scene
+        skipToMainScene();
     }
 
     IEnumerator FadeTextIn(Text text, float fadeInTime)
@@ -46,5 +50,11 @@ public class IntroManager : MonoBehaviour
             text.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - (Time.deltaTime / fadeInTime));
             yield return null;
         }
+    }
+
+    // 추가된 부분: 모든 텍스트가 표시된 후 메인 씬으로 이동
+    public void skipToMainScene()
+    {
+        SceneManager.LoadScene("Main");
     }
 }
