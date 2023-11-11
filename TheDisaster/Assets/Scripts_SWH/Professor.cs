@@ -150,6 +150,11 @@ public class Professor : MonoBehaviour
         {
             demandTxt.text = "그렇다면 좋은 성과를 기대하겠네.";
             yield return new WaitForSeconds(2.0f);
+            demand.SetActive(false);
+        }
+        else
+        {
+            demand.SetActive(false);
         }
         Invoke("NewProfessor", 2.0f);
     }
