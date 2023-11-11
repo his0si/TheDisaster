@@ -44,8 +44,8 @@ public class MediManager : MonoBehaviour
         makedMedi = mediRecipe.makeMedi(selectedMaterial[0], selectedMaterial[1]);
         Debug.Log(makedMedi.name);
         ResetMaterials();
-        // 컬렉션 잠금 해제 
-        PlayerPrefs.SetInt(makedMedi.name, 1);
+        //// 컬렉션 잠금 해제 
+        //PlayerPrefs.SetInt(makedMedi.name, 1);
         //// for debug
         //for(int i = 0; i < mediRecipe.medisList.Length; i++)
         //{
