@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ending.unity
     guid: 5c22a64173ae49640a0cfb9be2e81ef6
+  - enabled: 1
+    path: Assets/Scenes/NextDay1.unity
+    guid: 154de957b8fcf794bad5644344b3d50c
   m_configObjects: {}

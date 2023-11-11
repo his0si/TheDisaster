@@ -56,15 +56,15 @@ public class GameManager : MonoBehaviour
     {
         if(demandNum == 3)
         {
-            LoadScene("Day2");
+            LoadScene("NextDay1");
         }
         if(demandNum == 6) 
         {
-            LoadScene("Day3");
+            LoadScene("NextDay2");
         }
         if (demandNum == 9)
         {
-            LoadScene("Ending");
+            LoadScene("NextDay3");
         }
     }
 
