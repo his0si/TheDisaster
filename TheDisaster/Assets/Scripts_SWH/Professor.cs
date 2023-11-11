@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Professor : MonoBehaviour
 {
     public GameObject demand;
     public GameObject answer1;
     public GameObject answer2;
-
-    public int tryCount;    //조합 시도 횟수
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +19,6 @@ public class Professor : MonoBehaviour
     //새로운 의뢰 받기
     public void NewProfessor()
     {
-        demand.SetActive(false);
-        answer1.SetActive(false);
-        answer2.SetActive(false);
-
-        tryCount = 0;
         GameManager.Instance.demandNum++;
         if(GameManager.Instance.demandNum > 3)
         {
@@ -52,7 +46,7 @@ public class Professor : MonoBehaviour
         if(answer2.GetComponentInChildren<Text>().text == "그건 좀 어려울 것 같습니다 교수님")
         {
             NewProfessor();
-
+            demand.SetActive(false);
         }
 
         //demand.SetActive(false);
@@ -63,26 +57,41 @@ public class Professor : MonoBehaviour
     //약 조합 버튼 클릭 시 정답 비교(버튼)
     public void CompareMedi()
     {
+        StartCoroutine("SubmitMedi");
+    }
+
+    IEnumerator SubmitMedi()
+    {
         MediManager mediManager = GameObject.Find("MediManager").GetComponent<MediManager>();
         Demands demandMedi = GameObject.Find("Demand").GetComponent<Demands>();
 
-        if(mediManager.makedMedi.name == demandMedi.mediNum.ToString())
+        if (mediManager.makedMedi.name == demandMedi.mediNum.ToString())
         {
             Debug.Log("조합 성공!");
             GameManager.Instance.AddScore(demandMedi.demandCount);
             StopCoroutine("ShowDemandText");
-            NewProfessor();
+            
+            InactiveDemandUI();
+            mediManager.makingAni.SetActive(false);
+            demandMedi.demandText.text = "어 고마워~";
+
+            yield return new WaitForSeconds(2.0f);
+            demand.SetActive(false);
+
+            Invoke("NewProfessor", 2.0f);
         }
         else
         {
             Debug.Log("조합 실패!");
-            tryCount++;
-            if(tryCount >= 2)
-            {
-                StopCoroutine("ShowDemandText");
-                NewProfessor();
-            }
+            StopCoroutine("ShowDemandText");
+
+            InactiveDemandUI();
+            mediManager.makingAni.SetActive(false);
+            demandMedi.demandText.text = "이게 뭐야! 장난해?";
+
+            yield return new WaitForSeconds(2.0f);
+            demand.SetActive(false);
+            Invoke("NewProfessor", 2.0f);
         }
     }
-
 }
