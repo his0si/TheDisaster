@@ -15,6 +15,8 @@ public class MediManager : MonoBehaviour
     private Text makedMediName;
     private Text makedMediDiscription;
 
+    public AudioSource selectAudioSource;
+
     private void Start()
     {
         ResetMaterials();
@@ -22,6 +24,7 @@ public class MediManager : MonoBehaviour
         makedMediImg = makingAni.transform.GetChild(3).GetChild(0).GetComponent<Image>();
         makedMediName = makingAni.transform.GetChild(3).GetChild(1).GetComponent<Text>();
         makedMediDiscription = makingAni.transform.GetChild(3).GetChild(2).GetComponent<Text>();
+        selectAudioSource = GetComponent<AudioSource>();
     }
 
     //리셋
@@ -42,7 +45,7 @@ public class MediManager : MonoBehaviour
             Debug.Log("재료 더 필요");
         }
         makedMedi = mediRecipe.makeMedi(selectedMaterial[0], selectedMaterial[1]);
-        Debug.Log(makedMedi.name);
+        //Debug.Log(makedMedi.name);
         ResetMaterials();
         //// 컬렉션 잠금 해제 
         //PlayerPrefs.SetInt(makedMedi.name, 1);
@@ -51,7 +54,7 @@ public class MediManager : MonoBehaviour
         //{
         //    Debug.Log(PlayerPrefs.GetInt(mediRecipe.medisList[i].name));
         //}
-
+        selectAudioSource.Play();
 
         // 만들기 애니메이션 Start
         makingAni.SetActive(true);
