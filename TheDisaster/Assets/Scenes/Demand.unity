@@ -525,6 +525,7 @@ MonoBehaviour:
   selectedText:
   - {fileID: 1005608080}
   - {fileID: 991790706}
+  makingAni: {fileID: 0}
 --- !u!4 &528152976
 Transform:
   m_ObjectHideFlags: 0

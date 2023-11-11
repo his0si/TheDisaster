@@ -5,6 +5,7 @@ public class skip : MonoBehaviour
 {
     public void skipToMainScene()
     {
+        GameManager.Instance.FadeOut();
         SceneManager.LoadScene("Main");
     }
 }

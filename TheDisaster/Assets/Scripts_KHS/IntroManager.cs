@@ -13,6 +13,7 @@ public class IntroManager : MonoBehaviour
         foreach (Text text in texts)
         {
             text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
+
         }
 
         StartCoroutine(ShowTextsSequentially(4.0f, 1.0f));
@@ -26,11 +27,9 @@ public class IntroManager : MonoBehaviour
 
             yield return new WaitForSeconds(textDisplayTime);
 
-            // Add a 1-second gap between texts
             yield return new WaitForSeconds(gapTime);
         }
 
-        // After all texts are displayed, skip to the main scene
         skipToMainScene();
     }
 
@@ -42,7 +41,6 @@ public class IntroManager : MonoBehaviour
             yield return null;
         }
 
-        // Wait for the text to be fully visible before starting to fade out
         yield return new WaitForSeconds(fadeInTime);
 
         while (text.color.a > 0.0f)
@@ -52,9 +50,10 @@ public class IntroManager : MonoBehaviour
         }
     }
 
-    // 추가된 부분: 모든 텍스트가 표시된 후 메인 씬으로 이동
+    //모든 텍스트가 표시된 후 메인 씬으로 이동
     public void skipToMainScene()
     {
+        GameManager.Instance.FadeOut();
         SceneManager.LoadScene("Main");
     }
 }

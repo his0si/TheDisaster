@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MediMaking.unity
     guid: 81f80b6f92a7a544ea83fb9dfc825e1d
+  - enabled: 1
+    path: Assets/Scenes/Day1.unity
+    guid: ca3c633746456484bb83255fae81ebc0
   m_configObjects: {}
