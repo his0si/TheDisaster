@@ -105,23 +105,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(FadeInCoroutine());
     }
 
-    IEnumerator FadeInCoroutine()
-    {
-        float alpha = 1;
-        while (alpha > 0f)
-        {
-            alpha -= 0.01f;
-            yield return new WaitForSeconds(0.01f);
-            fadePanel.color = new Color(0, 0, 0, alpha);
-        }
-    }
-
-    void LoadSceneAfter1s()
-    {
-        SceneManager.LoadScene(nextSceneStr);
-        StartCoroutine(FadeInCoroutine());
-    }
-
     //점수 더하기
     public void AddScore(int count)
     {
