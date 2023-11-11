@@ -22,4 +22,4 @@ MonoBehaviour:
     \uC218 \uC5C6\uC5C8\uC2B5\uB2C8\uB2E4.  \uB9CE\uC740 \uB3C4\uC804\uC801\uC778
     \uB9C8\uBC95\uC0AC\uB4E4\uC774 \uC544\uC9C1\uB3C4  \uC644\uBCBD\uD55C \uC870\uD569\uC2DD\uC744
     \uB9CC\uB4E4\uAE30 \uC704\uD574 \uACE0\uAD70\uBD84\uD22C\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4.\t"
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 1ab835da180921b44a5348c6d40e0fff, type: 3}

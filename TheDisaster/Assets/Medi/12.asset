@@ -21,4 +21,4 @@ MonoBehaviour:
     \uC548\uC815\uC744 \uC90D\uB2C8\uB2E4.  \uAC15\uC544\uC9C0\uC5D0\uAC8C\uB3C4
     \uD6A8\uACFC\uAC00 \uC788\uB294 \uC57D\uC744  \uB300\uD615 \uC81C\uC57D\uD68C\uC0AC\uAC00
     \uC5F0\uAD6C \uC911\uC785\uB2C8\uB2E4. "
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 0d41b5dd7807baf4ea781b22b35536ac, type: 3}

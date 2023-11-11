@@ -20,4 +20,4 @@ MonoBehaviour:
     \uB0B4\uC5D0 \uCC3E\uC744 \uC218 \uC788\uAC8C \uB429\uB2C8\uB2E4.  \uC0AC\uB77C\uC9C4
     \uBC84\uC988 \uD55C\uCABD\uC744 \uCC3E\uB294 \uB370 \uAC00\uC7A5 \uD070 \uD6A8\uACFC\uB97C
     \uBCF4\uC785\uB2C8\uB2E4."
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 046bf5132c2b19e46b58a271a905a44d, type: 3}

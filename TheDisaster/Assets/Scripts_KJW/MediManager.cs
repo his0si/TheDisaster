@@ -56,6 +56,7 @@ public class MediManager : MonoBehaviour
         // 만들기 애니메이션 Start
         makingAni.SetActive(true);
         makedMediImg.sprite = makedMedi.sprite;
+        makedMediImg.SetNativeSize();
         makedMediName.text = makedMedi.mediName;
         makedMediDiscription.text = makedMedi.shortDescription;
     }
