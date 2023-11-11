@@ -22,6 +22,7 @@ public class MediForCollection : MonoBehaviour
     public void Show()
     {
         this.GetComponent<Image>().sprite = mediSprite;
+        this.GetComponent<Image>().SetNativeSize();
     }
 
     public void ClickMedi()
@@ -37,7 +38,8 @@ public class MediForCollection : MonoBehaviour
     {
         collectionInfo.gameObject.SetActive(true);
         collectionInfo.infoImage.sprite = thisMedi.sprite;
-        collectionInfo.mediName.text = thisMedi.mediName;
+        collectionInfo.infoImage.GetComponent<Image>().SetNativeSize();
+       collectionInfo.mediName.text = thisMedi.mediName;
         collectionInfo.description.text = thisMedi.longDescription;
         transform.parent.parent.GetComponent<Canvas>().sortingOrder = 10;
     }

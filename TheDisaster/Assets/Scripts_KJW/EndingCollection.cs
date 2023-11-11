@@ -29,7 +29,10 @@ public class EndingCollection : MonoBehaviour
     private void ShowEndingCollection()
     {
         if (PlayerPrefs.GetInt(endingName) == 1) // ผ๖มýตส
+        {
             this.GetComponent<Image>().sprite = endingSprite;
+            this.GetComponent<Image>().SetNativeSize();
+        }
     }
 
     public void ClickEnding()
@@ -39,6 +42,7 @@ public class EndingCollection : MonoBehaviour
             blackPanel.SetActive(true);
             collectionInfo.gameObject.SetActive(true);
             collectionInfo.infoImage.sprite = endingSprite;
+            collectionInfo.infoImage.GetComponent<Image>().SetNativeSize();
             collectionInfo.mediName.text = endingName;
             collectionInfo.description.text = endingDiscription;
             transform.parent.parent.GetComponent<Canvas>().sortingOrder = 10;
