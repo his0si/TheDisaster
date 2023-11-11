@@ -86,7 +86,23 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
             fadePanel.color = new Color(0,0,0, alpha);
         }
-        yield return new WaitForSeconds(1);
+    }
+
+    IEnumerator FadeInCoroutine()
+    {
+        float alpha = 1;
+        while (alpha > 0f)
+        {
+            alpha -= 0.01f;
+            yield return new WaitForSeconds(0.01f);
+            fadePanel.color = new Color(0, 0, 0, alpha);
+        }
+    }
+
+    void LoadSceneAfter1s()
+    {
+        SceneManager.LoadScene(nextSceneStr);
+        StartCoroutine(FadeInCoroutine());
     }
 
     IEnumerator FadeInCoroutine()
