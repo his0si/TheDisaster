@@ -482,7 +482,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 44c4d0588d4f1aa4fb0a6670d57b2617, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -1048,6 +1048,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 377954028}
     m_Modifications:
     - target: {fileID: 283751024610471394, guid: 2b0ebc2594437044ebf9b16356582f8a, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 44c4d0588d4f1aa4fb0a6670d57b2617, type: 3}
+    - target: {fileID: 283751024610471394, guid: 2b0ebc2594437044ebf9b16356582f8a, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 50
       objectReference: {fileID: 0}
@@ -1156,6 +1160,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 377954028}
     m_Modifications:
+    - target: {fileID: 976995344179379347, guid: 98bf4347a1df4ed43ae4e3258c2d302e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 44c4d0588d4f1aa4fb0a6670d57b2617, type: 3}
     - target: {fileID: 976995344179379347, guid: 98bf4347a1df4ed43ae4e3258c2d302e, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 50
@@ -1275,6 +1283,10 @@ PrefabInstance:
         \uB300\uD68C\uAC00 \uC788\uB294\uB370\u2026 \uB9C8\uBC95\uC57D\uC744 \uB9CC\uB4E4\uC5B4
         \uBCFC \uC218 \uC788\uACA0\uB098?\u201D"
       objectReference: {fileID: 0}
+    - target: {fileID: 3411997936210523724, guid: 7118ef3cc544ab34bb23330b005998d3, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 44c4d0588d4f1aa4fb0a6670d57b2617, type: 3}
     - target: {fileID: 3411997936210523724, guid: 7118ef3cc544ab34bb23330b005998d3, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 50
@@ -1472,6 +1484,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\uC5B4\uB290 \uB0A0 \uC9C0\uB3C4 \uAD50\uC218\uAC00 \uC8FC\uB294 \uC5B8\uC9C8"
       objectReference: {fileID: 0}
+    - target: {fileID: 7307992618925752671, guid: afee140eed8249f468435210f23b4168, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 44c4d0588d4f1aa4fb0a6670d57b2617, type: 3}
     - target: {fileID: 7307992618925752671, guid: afee140eed8249f468435210f23b4168, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 50
