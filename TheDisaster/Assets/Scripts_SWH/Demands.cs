@@ -11,7 +11,12 @@ public class Demands : MonoBehaviour
     public DemandsText[] medi;
     public int mediNum;     //약 번호(0~20)
     public int demandCount; //요구사항 텍스트 인덱스
-    
+
+    public string[] demandMsg;
+    public string[] successMsg;
+    public string[] fail1Msg;
+    public string[] fail2Msg;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +24,8 @@ public class Demands : MonoBehaviour
     }
     public void NewDemand()
     {
-        demandText.text = "자네, 나 뭐 하나만 만들어줘";
-        answer1Text.text = "네.. 뭐..";
-        answer2Text.text = "그건 좀 어려울 것 같습니다 교수님";
+        int i = Random.Range(0, demandMsg.Length);
+        demandText.text = demandMsg[i];
         demandCount = 0;
         mediNum = Random.Range(0, medi.Length);
         //demandText.text = medi[mediNum].demands[demandCount];
@@ -39,8 +43,6 @@ public class Demands : MonoBehaviour
             demandText.text = medi[mediNum].demands[demandCount];
         }
         demandCount++;
-        answer1Text.text = "예?";
-        answer2Text.text = "넵 가능합니다 교수님!";
     }
 }
 
