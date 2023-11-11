@@ -55,9 +55,11 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string sceneName) 
     {
-        nextSceneStr = sceneName;
-        StartCoroutine(FadeOutCoroutine());
-        Invoke("LoadSceneAfter1s", 1.5f);
+        if(fadePanel.color.a <= 0)
+        {
+            nextSceneStr = sceneName;
+            StartCoroutine(FadeOutCoroutine());
+        }
     }
 
     public void FadeOut()
@@ -74,6 +76,11 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
             fadePanel.color = new Color(0,0,0, alpha);
         }
+        if(alpha >= 1.0f)
+        {
+            SceneManager.LoadScene(nextSceneStr);
+            StartCoroutine(FadeInCoroutine());
+        }
     }
 
     IEnumerator FadeInCoroutine()
@@ -87,11 +94,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void LoadSceneAfter1s()
-    {
-        SceneManager.LoadScene(nextSceneStr);
-        StartCoroutine(FadeInCoroutine());
-    }
 
     //점수 더하기
     public void AddScore(int count)
