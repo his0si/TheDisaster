@@ -5,7 +5,7 @@ using System.Collections;
 public class IntroManager : MonoBehaviour
 {
     [SerializeField] GameObject panel;
-    [SerializeField] Text[] texts; // TextMeshProUGUI 대신 Text로 변경
+    [SerializeField] Text[] texts;
 
     void Start()
     {
@@ -14,15 +14,19 @@ public class IntroManager : MonoBehaviour
             text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
         }
 
-        StartCoroutine(ShowTextsSequentially(3.0f));
+        StartCoroutine(ShowTextsSequentially(4.0f, 1.0f));
     }
 
-    IEnumerator ShowTextsSequentially(float textInterval)
+    IEnumerator ShowTextsSequentially(float textDisplayTime, float gapTime)
     {
         for (int i = 0; i < texts.Length; i++)
         {
             StartCoroutine(FadeTextIn(texts[i], 1.5f));
-            yield return new WaitForSeconds(textInterval);
+
+            yield return new WaitForSeconds(textDisplayTime);
+
+            // Add a 1-second gap between texts
+            yield return new WaitForSeconds(gapTime);
         }
     }
 
@@ -34,6 +38,7 @@ public class IntroManager : MonoBehaviour
             yield return null;
         }
 
+        // Wait for the text to be fully visible before starting to fade out
         yield return new WaitForSeconds(fadeInTime);
 
         while (text.color.a > 0.0f)
