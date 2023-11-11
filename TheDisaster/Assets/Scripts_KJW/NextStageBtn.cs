@@ -13,12 +13,12 @@ public class NextStageBtn : MonoBehaviour
             GameManager.Instance.dayNum++;
         }
             
-        if (GameManager.Instance.dayNum == 1)
+        else if (GameManager.Instance.dayNum == 1)
         {
             GameManager.Instance.LoadScene("NextDay2");
             GameManager.Instance.dayNum++;
         }
-        if (GameManager.Instance.dayNum == 2)
+        else if (GameManager.Instance.dayNum == 2)
         {
             GameManager.Instance.LoadScene("NextDay3");
             GameManager.Instance.dayNum++;

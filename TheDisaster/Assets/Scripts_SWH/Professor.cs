@@ -16,11 +16,13 @@ public class Professor : MonoBehaviour
     public GameObject endBtn;
 
     int a=0;
+    int todayDemandNum;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        todayDemandNum=0;
         StartCoroutine("DayStart"); 
     }
 
@@ -28,13 +30,17 @@ public class Professor : MonoBehaviour
     public void NewProfessor()
     {
         GameManager.Instance.demandNum++;
-        if(GameManager.Instance.demandNum > 3)
+        todayDemandNum++;
+        if(todayDemandNum > 3)
         {
             Debug.Log("오늘 하루 의뢰 끝!");
             StartCoroutine("DayEnd");
         }
-        StartCoroutine("ShowDemandText");
-        demand.GetComponent<Demands>().NewDemand();
+        else
+        {
+            StartCoroutine("ShowDemandText");
+            demand.GetComponent<Demands>().NewDemand();
+        }
     }
 
     //day 시작할때
@@ -66,7 +72,7 @@ public class Professor : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
 
         demand.SetActive(true);
-        if (GameManager.Instance.dayNum == 3)
+        if (GameManager.Instance.dayNum == 2)
         {
             demandTxt.text = "오늘 푹… 자지 말게! 연습, 또 연습!";
         }
@@ -97,12 +103,12 @@ public class Professor : MonoBehaviour
         else if(GameManager.Instance.dayNum == 1)
         {
             demandTxt.text = "우는 소리 하지 말게나! 바로 시작하지!";
-            Invoke("InActiveStartAnswer", 1.0f);
+            StartCoroutine("InActiveStartAnswer");
         }
         else if(GameManager.Instance.dayNum == 2)
         {
             demandTxt.text = "허허, 벌써부터 기대하고 있구먼!";
-            Invoke("InActiveStartAnswer", 1.0f);
+            StartCoroutine("InActiveStartAnswer");
         }
     }
 
@@ -144,6 +150,11 @@ public class Professor : MonoBehaviour
         {
             demandTxt.text = "그렇다면 좋은 성과를 기대하겠네.";
             yield return new WaitForSeconds(2.0f);
+            demand.SetActive(false);
+        }
+        else
+        {
+            demand.SetActive(false);
         }
         Invoke("NewProfessor", 2.0f);
     }
