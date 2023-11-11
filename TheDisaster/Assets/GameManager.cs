@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public float totalScore;
     public float likeability;
 
-
+    private string nextSceneStr;
     private Image fadePanel;
     private static GameManager _instance;
     public static GameManager Instance
@@ -67,8 +67,9 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string sceneName) 
     {
+        nextSceneStr = sceneName;
         StartCoroutine(FadeOutCoroutine());
-        SceneManager.LoadScene(sceneName);
+        Invoke("LoadSceneAfter1s", 1.5f);
     }
 
     public void FadeOut()
@@ -86,6 +87,23 @@ public class GameManager : MonoBehaviour
             fadePanel.color = new Color(0,0,0, alpha);
         }
         yield return new WaitForSeconds(1);
+    }
+
+    IEnumerator FadeInCoroutine()
+    {
+        float alpha = 1;
+        while (alpha > 0f)
+        {
+            alpha -= 0.01f;
+            yield return new WaitForSeconds(0.01f);
+            fadePanel.color = new Color(0, 0, 0, alpha);
+        }
+    }
+
+    void LoadSceneAfter1s()
+    {
+        SceneManager.LoadScene(nextSceneStr);
+        StartCoroutine(FadeInCoroutine());
     }
 
     //점수 더하기
