@@ -5,12 +5,17 @@ using System.Collections;
 
 public class IntroManager : MonoBehaviour
 {
-    [SerializeField] GameObject panel; // Panel object containing the images
-    [SerializeField] Image[] images;    // Array to hold Image components
+    [SerializeField] GameObject panel;
+    [SerializeField] Image[] images;   
     [SerializeField] TextMeshProUGUI text = null;
 
     void Start()
     {
+        foreach (Image image in images)
+        {
+            image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
+        }
+
         StartCoroutine(ShowImagesSequentially(1.5f));
     }
 
@@ -27,8 +32,6 @@ public class IntroManager : MonoBehaviour
 
     IEnumerator FadeImageIn(Image image, float fadeInTime)
     {
-        image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
-
         while (image.color.a < 1.0f)
         {
             image.color = new Color(image.color.r, image.color.g, image.color.b, image.color.a + (Time.deltaTime / fadeInTime));
@@ -38,8 +41,6 @@ public class IntroManager : MonoBehaviour
 
     IEnumerator FadeTextToFullAlpha(float t, TextMeshProUGUI j)
     {
-        j.color = new Color(j.color.r, j.color.g, j.color.b, 0);
-
         while (j.color.a < 1.0f)
         {
             j.color = new Color(j.color.r, j.color.g, j.color.b, j.color.a + (Time.deltaTime / t));
