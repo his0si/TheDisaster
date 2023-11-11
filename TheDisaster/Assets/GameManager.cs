@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string sceneName) 
     {
-        FadeOut();
+        StartCoroutine(FadeOutCoroutine());
         SceneManager.LoadScene(sceneName);
     }
 
