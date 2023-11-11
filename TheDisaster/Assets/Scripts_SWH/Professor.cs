@@ -22,7 +22,12 @@ public class Professor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        todayDemandNum=0;
+        foreach (Button x in GameObject.Find("Materials").GetComponentsInChildren<Button>())
+        {
+            x.interactable = false;
+        }
+
+        todayDemandNum =0;
         StartCoroutine("DayStart"); 
     }
 
@@ -178,6 +183,11 @@ public class Professor : MonoBehaviour
         answer1.SetActive(true);
         answer2.SetActive(true);
         demand.GetComponent<Demands>().PrintDemands();
+
+        foreach (Button x in GameObject.Find("Materials").GetComponentsInChildren<Button>())
+        {
+            x.interactable = true;
+        }
     }
 
     //요구 수락 했을 시 말풍선 제거(버튼)
@@ -196,6 +206,11 @@ public class Professor : MonoBehaviour
 
     IEnumerator SubmitMedi()
     {
+        foreach (Button x in GameObject.Find("Materials").GetComponentsInChildren<Button>())
+        {
+            x.interactable = false;
+        }
+
         MediManager mediManager = GameObject.Find("MediManager").GetComponent<MediManager>();
         Demands demandMedi = GameObject.Find("Demand").GetComponent<Demands>();
         
