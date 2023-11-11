@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
             fadePanel.color = new Color(0,0,0, alpha);
         }
+        yield return new WaitForSeconds(1);
     }
 
     IEnumerator FadeInCoroutine()
