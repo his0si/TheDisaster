@@ -2879,9 +2879,9 @@ PrefabInstance:
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: endingDiscription
       value: "\uBE44\uB85D \uB300\uD68C\uC5D0\uC11C 1\uB4F1\uC744 \uB530\uB0B4\uC9C4
-        \uBABB\uD588\uC9C0\uB9CC, \uAD50\uC218\uB2D8\uC758 \uB9C8\uC74C\uC18D\uC5D4
-        \uB2F9\uC2E0\uC774 1\uB4F1\uC778 \uAC83 \uAC19\uC2B5\uB2C8\uB2E4! \uC55E\uC73C\uB85C
-        \uBC14\uC05C \uC0DD\uD65C\uC774 \uC774\uC5B4\uC9C8 \uAC81\uB2C8\uB2E4. \uADF8\uB798\uB3C4
+        \uBABB\uD588\uC9C0\uB9CC,  \uAD50\uC218\uB2D8\uC758 \uB9C8\uC74C\uC18D\uC5D4
+        \uB2F9\uC2E0\uC774 1\uB4F1\uC778 \uAC83 \uAC19\uC2B5\uB2C8\uB2E4!  \uC55E\uC73C\uB85C
+        \uBC14\uC05C \uC0DD\uD65C\uC774 \uC774\uC5B4\uC9C8 \uAC81\uB2C8\uB2E4.  \uADF8\uB798\uB3C4
         \uC5F4\uC2EC\uD788 \uD574\uC11C \uBC15\uC0AC \uB17C\uBB38\uC744 \uC368\uBCF4\uB3C4\uB85D
         \uD569\uC2DC\uB2E4! "
       objectReference: {fileID: 0}
@@ -3411,8 +3411,8 @@ PrefabInstance:
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: endingDiscription
       value: "\uADF8\uB7EC\uB098 \uAD50\uC218\uB2D8\uC758 \uBBF8\uC2EC\uCA4D\uC740
-        \uB208\uBE5B\uC740 \uAC00\uC2DC\uC9C8 \uC54A\uC2B5\uB2C8\uB2E4. \uB300\uD68C\uC5D0\uC11C
-        \uC6B0\uC2B9\uD55C \uAC83\uC774 \uACB0\uCF54 \uC6B0\uC5F0\uC774 \uC544\uB2D8\uC744
+        \uB208\uBE5B\uC740 \uAC00\uC2DC\uC9C8 \uC54A\uC2B5\uB2C8\uB2E4.  \uB300\uD68C\uC5D0\uC11C
+        \uC6B0\uC2B9\uD55C \uAC83\uC774 \uACB0\uCF54 \uC6B0\uC5F0\uC774 \uC544\uB2D8\uC744 
         \uAD50\uC218\uB2D8\uAED8 \uC99D\uBA85\uD574 \uBD05\uC2DC\uB2E4! "
       objectReference: {fileID: 0}
     - target: {fileID: 741186405976071372, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
@@ -5249,11 +5249,11 @@ PrefabInstance:
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: endingDiscription
       value: "\uBC30\uC324\u2026 \uC544\uB2C8 \uAE40\uAD50\uC218\uB2D8\uC758 \uCD0C\uCCA0\uC0B4\uC778\uC774
-        \uC774\uC5B4\uC9D1\uB2C8\uB2E4. \uB2F9\uC2E0\uC740 \uC815\uB9D0\uB85C \uB9C8\uBC95\uC57D\uC744
+        \uC774\uC5B4\uC9D1\uB2C8\uB2E4.  \uB2F9\uC2E0\uC740 \uC815\uB9D0\uB85C \uB9C8\uBC95\uC57D\uC744
         \uBC30\uC6B0\uACE0 \uC2F6\uC5B4\uC11C \uB300\uD559\uC6D0\uC5D0 \uC628 \uAC83\uC774
-        \uB9DE\uACA0\uC8E0? \uD558\uC9C0\uB9CC \uC544\uC9C1 \uAE30\uD68C\uAC00 \uB0A8\uC544\uC788\uC2B5\uB2C8\uB2E4!
+        \uB9DE\uACA0\uC8E0?  \uD558\uC9C0\uB9CC \uC544\uC9C1 \uAE30\uD68C\uAC00 \uB0A8\uC544\uC788\uC2B5\uB2C8\uB2E4! 
         \uB0A8\uC740 \uBC15\uC0AC \uACFC\uC815 \uB3D9\uC548 \uAD50\uC218\uB2D8\uAED8
-        \uC5B4\uD544\uD574 \uBCF4\uB3C4\uB85D \uD574\uC694! \uC5F4\uCA61, \uC5F4\uCA61,
+        \uC5B4\uD544\uD574 \uBCF4\uB3C4\uB85D \uD574\uC694!  \uC5F4\uCA61, \uC5F4\uCA61,
         \uC5F4\uCA61! "
       objectReference: {fileID: 0}
     - target: {fileID: 741186405976071372, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
@@ -6012,14 +6012,14 @@ PrefabInstance:
       objectReference: {fileID: 2075596047}
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: endingDiscription
-      value: "\uAD50\uC218\uB2D8\uC740 \uD22C\uC9C0\uB85C \uBD88\uD0C0\uC624\uB985\uB2C8\uB2E4.
+      value: "\uAD50\uC218\uB2D8\uC740 \uD22C\uC9C0\uB85C \uBD88\uD0C0\uC624\uB985\uB2C8\uB2E4. 
         \uAD50\uC218\uB2D8\uC758 \uC9C4\uC815\uD55C \uB3C4\uBE44\uAC00 \uB418\uC5B4\uBC84\uB9B0
-        \uB2F9\uC2E0! \uB9C8\uBC95\uC57D\uD559 \uBD84\uC57C \uCD5C\uACE0\uC758 \uBC15\uC0AC\uC5D0\uAC8C
-        \uC608\uC068\uC744 \uBC1B\uAC8C \uB418\uC5C8\uC9C0\uB9CC\u2026 \uB208\uBB3C\uC774
-        \uD750\uB974\uB294 \uAC74 \uC5B4\uC9F8\uC11C\uC77C\uAE4C\uC694? \uADF8\uB807\uC9C0\uB9CC
-        \uB2F9\uC2E0\uC740 \uAE30\uC058\uAC8C \uC6B4\uBA85\uC744 \uBC1B\uC544\uB4E4\uC785\uB2C8\uB2E4.
+        \uB2F9\uC2E0!  \uB9C8\uBC95\uC57D\uD559 \uBD84\uC57C \uCD5C\uACE0\uC758 \uBC15\uC0AC\uC5D0\uAC8C
+        \uC608\uC068\uC744 \uBC1B\uAC8C \uB418\uC5C8\uC9C0\uB9CC\u2026  \uB208\uBB3C\uC774
+        \uD750\uB974\uB294 \uAC74 \uC5B4\uC9F8\uC11C\uC77C\uAE4C\uC694?  \uADF8\uB807\uC9C0\uB9CC
+        \uB2F9\uC2E0\uC740 \uAE30\uC058\uAC8C \uC6B4\uBA85\uC744 \uBC1B\uC544\uB4E4\uC785\uB2C8\uB2E4. 
         \uB2F9\uC2E0\uC740 \uBA87 \uB144 \uD6C4 \uD559\uD68C\uC9C0\uC5D0 \uB17C\uBB38\uC744
-        \uD22C\uACE0\uD558\uAC8C \uB418\uACE0, \uC138\uACC4\uC5D0\uC11C \uC601\uD5A5\uB825
+        \uD22C\uACE0\uD558\uAC8C \uB418\uACE0,  \uC138\uACC4\uC5D0\uC11C \uC601\uD5A5\uB825
         \uC788\uB294 \uB9C8\uBC95\uC0AC 100\uC778 \uC548\uC5D0 \uC120\uC815\uC774
         \uB429\uB2C8\uB2E4! "
       objectReference: {fileID: 0}
@@ -6299,8 +6299,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34.1, y: 207}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 74.026, y: 218}
+  m_SizeDelta: {x: 302.02, y: 77.6362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1281329659
 MonoBehaviour:
@@ -6323,8 +6323,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 44c4d0588d4f1aa4fb0a6670d57b2617, type: 3}
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -6335,7 +6335,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\u201C\uB0B4\uAC00 \uC778\uC7AC\uB97C \uB4E4\uC600\uAD70! \uC55E\uC73C\uB85C\uB3C4
+    \uC798 \uBD80\uD0C1\uD558\uB124.\u201D "
 --- !u!222 &1281329660
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7270,8 +7271,8 @@ PrefabInstance:
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: endingDiscription
       value: "\uAD50\uC218\uB2D8\uC740 \uADF8\uB807\uAC8C \uC2E4\uB9DD\uD558\uC2DC\uC9C4
-        \uC54A\uC740 \uAC83 \uAC19\uC2B5\uB2C8\uB2E4. \uC801\uC5B4\uB3C4 \uAD50\uC218\uB2D8
-        \uB208\uC5D0 \uB744\uB294 \uB370\uC5D4 \uC131\uACF5\uD55C \uB4EF \uBCF4\uC785\uB2C8\uB2E4.
+        \uC54A\uC740 \uAC83 \uAC19\uC2B5\uB2C8\uB2E4.  \uC801\uC5B4\uB3C4 \uAD50\uC218\uB2D8
+        \uB208\uC5D0 \uB744\uB294 \uB370\uC5D4 \uC131\uACF5\uD55C \uB4EF \uBCF4\uC785\uB2C8\uB2E4. 
         \uC870\uAE08\uB9CC \uB354 \uC5F4\uC2EC\uD788 \uD574\uBCF4\uB3C4\uB85D \uD574\uC694,
         \uC6B0\uB9AC! "
       objectReference: {fileID: 0}
@@ -8181,8 +8182,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34.1, y: 207}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 47.926, y: 218}
+  m_SizeDelta: {x: 229.2501, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1502473367
 MonoBehaviour:
@@ -8205,8 +8206,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 44c4d0588d4f1aa4fb0a6670d57b2617, type: 3}
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -8217,7 +8218,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\uB2F9\uC2E0\uC740 \uC624\uB298 \uBC25\uC744 \uBA39\uACE0 \uC2F6\uC8E0?"
 --- !u!222 &1502473368
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8634,11 +8635,11 @@ PrefabInstance:
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: endingDiscription
       value: "\uAD50\uC218\uB2D8\uC740 \uB2F9\uC2E0\uC744 \uD3C9\uADE0\uBCF4\uB2E4
-        \uC870\uAE08 \uB611\uB611\uD55C \uD559\uC0DD \uC815\uB3C4\uB85C \uBCF4\uACE0
-        \uACC4\uC2E0 \uAC83 \uAC19\uC2B5\uB2C8\uB2E4. \uAD50\uC218\uB2D8\uC740 \uC6B0\uC2B9
+        \uC870\uAE08 \uB611\uB611\uD55C \uD559\uC0DD \uC815\uB3C4\uB85C  \uBCF4\uACE0
+        \uACC4\uC2E0 \uAC83 \uAC19\uC2B5\uB2C8\uB2E4.  \uAD50\uC218\uB2D8\uC740 \uC6B0\uC2B9
         \uAE30\uB150\uC73C\uB85C \uB2F9\uC2E0\uC5D0\uAC8C \uCE04\uB974\uB97C \uD558\uB098
         \uC8FC\uC2ED\uB2C8\uB2E4. \uC774\uB300\uB85C\uB9CC \uD55C\uB2E4\uBA74 \uBC15\uC0AC
-        \uB17C\uBB38 \uD1B5\uACFC\uB294 \uB5BC\uB193\uC740 \uB2F9\uC0C1?! \uB0A8\uC740
+        \uB17C\uBB38 \uD1B5\uACFC\uB294 \uB5BC\uB193\uC740 \uB2F9\uC0C1?!  \uB0A8\uC740
         \uACFC\uC815 \uB3D9\uC548 \uC5F4\uC2EC\uD788 \uD574\uBD10\uC694! "
       objectReference: {fileID: 0}
     - target: {fileID: 741186405976071372, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
@@ -8945,8 +8946,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000040054, y: -63.883606}
-  m_SizeDelta: {x: 325.1028, y: 379.7741}
+  m_AnchoredPosition: {x: 0.0000019073, y: -63.883606}
+  m_SizeDelta: {x: 378.1724, y: 379.7741}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1665888296
 MonoBehaviour:
@@ -8969,19 +8970,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 44c4d0588d4f1aa4fb0a6670d57b2617, type: 3}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: New Text
+    m_LineSpacing: 2.2
+  m_Text: "\uAC00\uCC60 50\uBC88 \uC548\uC5D0 \uC6D0\uD558\uB294 \uAC83\uC774 \uB098\uC635\uB2C8\uB2E4.
+    \n\uC544\uC9C1 \uAC00\uCC60 \uD69F\uC218\uB97C 50\uBC88 \uC544\uB798\uB85C \uC904\uC774\uB294
+    \uB9C8\uBC95\uC57D\uC740 \n\uAC1C\uBC1C\uB418\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4."
 --- !u!222 &1665888297
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10159,6 +10162,8 @@ MonoBehaviour:
   demandNum: 0
   totalScore: 0
   likeability: 0
+  demandsList: 
+  isSucess: 
 --- !u!4 &1985155941
 Transform:
   m_ObjectHideFlags: 0
@@ -10486,8 +10491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000040054, y: -63.883606}
-  m_SizeDelta: {x: 325.1028, y: 379.7741}
+  m_AnchoredPosition: {x: 0, y: -40.362305}
+  m_SizeDelta: {x: 421.52, y: 332.7315}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997491371
 MonoBehaviour:
@@ -10510,19 +10515,25 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 44c4d0588d4f1aa4fb0a6670d57b2617, type: 3}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: New Text
+    m_LineSpacing: 2.2
+  m_Text: "\uBC30\uC324\u2026 \uC544\uB2C8 \uAE40\uAD50\uC218\uB2D8\uC758 \uCD0C\uCCA0\uC0B4\uC778\uC774
+    \uC774\uC5B4\uC9D1\uB2C8\uB2E4. \n\uB2F9\uC2E0\uC740 \uC815\uB9D0\uB85C \uB9C8\uBC95\uC57D\uC744
+    \uBC30\uC6B0\uACE0 \uC2F6\uC5B4\uC11C \uB300\uD559\uC6D0\uC5D0 \uC628 \uAC83\uC774
+    \uB9DE\uACA0\uC8E0? \n\uD558\uC9C0\uB9CC \uC544\uC9C1 \uAE30\uD68C\uAC00 \uB0A8\uC544\uC788\uC2B5\uB2C8\uB2E4!
+    \n\uB0A8\uC740 \uBC15\uC0AC \uACFC\uC815 \uB3D9\uC548 \uAD50\uC218\uB2D8\uAED8
+    \uC5B4\uD544\uD574 \uBCF4\uB3C4\uB85D \uD574\uC694! \n\uC5F4\uCA61, \uC5F4\uCA61,
+    \uC5F4\uCA61! "
 --- !u!222 &1997491372
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10782,7 +10793,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1489272904}
   - {fileID: 777499381}
