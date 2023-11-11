@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
 {
     public int dayNum;
     public int demandNum;
-    public int likeability;
+    public float totalScore;
+    public float likeability;
 
 
     private Image fadePanel;
@@ -32,6 +33,8 @@ public class GameManager : MonoBehaviour
     }
     private void Awake()
     {
+        totalScore = 0.0f;
+        demandNum = 0;
         fadePanel = transform.GetChild(0).GetChild(0).GetComponent<Image>();
         if (_instance == null)
         {
@@ -79,4 +82,25 @@ public class GameManager : MonoBehaviour
             fadePanel.color = new Color(0,0,0, alpha);
         }
     }
+
+    //점수 더하기
+    public void AddScore(int count)
+    {
+        if(count == 1)
+        {
+            likeability = 3.0f;
+            totalScore += likeability;
+        }
+        else if(count == 2)
+        {
+            likeability = 2.0f;
+            totalScore += likeability;
+        }
+        else if(count == 3)
+        {
+            likeability = 1.0f;
+            totalScore += likeability;
+        }
+    }
+
 }
