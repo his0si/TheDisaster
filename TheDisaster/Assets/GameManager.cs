@@ -110,17 +110,12 @@ public class GameManager : MonoBehaviour
     {
         if(count == 1)
         {
-            likeability = 3.0f;
+            likeability = 1.0f;
             totalScore += likeability;
         }
         else if(count == 2)
         {
-            likeability = 2.0f;
-            totalScore += likeability;
-        }
-        else if(count == 3)
-        {
-            likeability = 1.0f;
+            likeability = 0.5f;
             totalScore += likeability;
         }
     }
