@@ -1118,6 +1118,8 @@ MonoBehaviour:
   demandNum: 0
   totalScore: 0
   likeability: 0
+  demandsList: 
+  isSucess: 
 --- !u!4 &2107514231
 Transform:
   m_ObjectHideFlags: 0
