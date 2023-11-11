@@ -2873,6 +2873,10 @@ PrefabInstance:
         \uAC70\uB4ED\uB0A0 \uC218 \uC788\uC744\uAC78\uC138.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
+      propertyPath: endingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a7e6e7979191d6c47affdcd947b78151, type: 3}
+    - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: collectionInfo
       value: 
       objectReference: {fileID: 2075596047}
@@ -3404,6 +3408,10 @@ PrefabInstance:
       value: "\u201C\uADF8\uB807\uAC8C \uC548 \uBD24\uB124\uB9CC\u2026 \uC7AC\uB2A5\uC774
         \uC788\uC5B4 \uBCF4\uC774\uB294\uAD70.\u201D "
       objectReference: {fileID: 0}
+    - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
+      propertyPath: endingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a1a07eece815fae498e40768d5f9d367, type: 3}
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: collectionInfo
       value: 
@@ -3976,7 +3984,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
+  m_CellSize: {x: 100, y: 150}
   m_Spacing: {x: 300, y: 50}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -4714,7 +4722,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
+  m_CellSize: {x: 100, y: 128.09}
   m_Spacing: {x: 50, y: 50}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -5242,6 +5250,10 @@ PrefabInstance:
       value: "\u201C\uD654\uC5F0 \uAD70, \uB9C8\uBC95\uC57D \uC5F0\uAD6C\uAC00 \uD558\uACE0
         \uC2F6\uB098?\u201D "
       objectReference: {fileID: 0}
+    - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
+      propertyPath: endingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b17e3c6b71042e479769c91c29c9d85, type: 3}
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: collectionInfo
       value: 
@@ -6006,6 +6018,10 @@ PrefabInstance:
       value: "\u201C\uB0B4\uAC00 \uC778\uC7AC\uB97C \uB4E4\uC600\uAD70! \uC55E\uC73C\uB85C\uB3C4
         \uC798 \uBD80\uD0C1\uD558\uB124.\u201D "
       objectReference: {fileID: 0}
+    - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
+      propertyPath: endingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a975db725f2fcc4c8c4485b1ebaf224, type: 3}
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: collectionInfo
       value: 
@@ -7264,6 +7280,10 @@ PrefabInstance:
       propertyPath: endingName
       value: "\u201C\uBB50, \uADF8\uB798\uB3C4 \uC608\uC0C1\uC740 \uD588\uB2E4\uB124.\u201D"
       objectReference: {fileID: 0}
+    - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
+      propertyPath: endingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d66cb18d1c291dc459dcf734cb41186b, type: 3}
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: collectionInfo
       value: 
@@ -8628,6 +8648,10 @@ PrefabInstance:
       propertyPath: endingName
       value: "\u201C\uAE30\uB300 \uC774\uC0C1\uC774\uB85C\uAD70. \uC218\uACE0\uD588\uB2E4\uB124.\u201D "
       objectReference: {fileID: 0}
+    - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
+      propertyPath: endingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d4010f7a5c0ff6441b1801998fd7bd32, type: 3}
     - target: {fileID: 315734849260035657, guid: d51b3379c56c5de439e8c20931bfed39, type: 3}
       propertyPath: collectionInfo
       value: 
