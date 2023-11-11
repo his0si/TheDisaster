@@ -68,6 +68,7 @@ public class Demands : MonoBehaviour
         }
     }
 
+    //의뢰 출력(버튼)
     public void PrintDemands()
     {
         //Debug.Log(medi[mediNum].demands.Length);
