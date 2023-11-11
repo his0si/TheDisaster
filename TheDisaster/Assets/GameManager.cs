@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     public float totalScore;
     public float likeability;
 
+    public List<int> demandsList;
+    public List<bool> isSucess;
+
     private string nextSceneStr;
     private Image fadePanel;
     private static GameManager _instance;
@@ -121,3 +124,4 @@ public class GameManager : MonoBehaviour
     }
 
 }
+

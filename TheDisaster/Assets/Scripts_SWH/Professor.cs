@@ -72,10 +72,13 @@ public class Professor : MonoBehaviour
         {
             Debug.Log("조합 성공!");
             GameManager.Instance.AddScore(demandMedi.demandCount);
+            GameManager.Instance.isSucess.Add(true);
             StopCoroutine("ShowDemandText");
             
             InactiveDemandUI();
             mediManager.makingAni.SetActive(false);
+
+            //랜덤 성공 메세지
             int i = Random.Range(0, demandMedi.successMsg.Length);
             demandMedi.demandText.text = demandMedi.successMsg[i];
 
@@ -87,12 +90,22 @@ public class Professor : MonoBehaviour
         else
         {
             Debug.Log("조합 실패!");
+            GameManager.Instance.isSucess.Add(false);
             StopCoroutine("ShowDemandText");
 
             InactiveDemandUI();
             mediManager.makingAni.SetActive(false);
-            int i = Random.Range(0, demandMedi.fail1Msg.Length);
-            demandMedi.demandText.text = demandMedi.fail1Msg[i];
+
+            if(demandMedi.isSecond == false)
+            {
+                int i = Random.Range(0, demandMedi.fail1Msg.Length);
+                demandMedi.demandText.text = demandMedi.fail1Msg[i];
+            }
+            else
+            {
+                int i = Random.Range(0, demandMedi.fail2Msg.Length);
+                demandMedi.demandText.text = demandMedi.fail2Msg[i];
+            }
 
             yield return new WaitForSeconds(2.0f);
             demand.SetActive(false);
