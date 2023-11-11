@@ -12,10 +12,9 @@ public class EndingManager : MonoBehaviour
         foreach (Text text in texts)
         {
             text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
-
         }
 
-        StartCoroutine(ShowTextsSequentially(4.0f, 1.0f));
+        StartCoroutine(ShowTextsSequentially(2.0f, 1.0f));
     }
 
     IEnumerator ShowTextsSequentially(float textDisplayTime, float gapTime)
@@ -38,12 +37,6 @@ public class EndingManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(fadeInTime);
-
-        while (text.color.a > 0.0f)
-        {
-            text.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - (Time.deltaTime / fadeInTime));
-            yield return null;
-        }
+        // Remove the WaitForSeconds and the second loop for fading out
     }
 }
