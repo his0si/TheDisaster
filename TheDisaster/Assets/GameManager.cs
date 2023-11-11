@@ -52,21 +52,6 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void CheckDemandNum()
-    {
-        if(demandNum == 3)
-        {
-            LoadScene("NextDay1");
-        }
-        if(demandNum == 6) 
-        {
-            LoadScene("NextDay2");
-        }
-        if (demandNum == 9)
-        {
-            LoadScene("NextDay3");
-        }
-    }
 
     public void LoadScene(string sceneName) 
     {
