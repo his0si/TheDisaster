@@ -9,22 +9,35 @@ public class Professor : MonoBehaviour
     public GameObject answer1;
     public GameObject answer2;
 
+    public int tryCount;    //조합 시도 횟수
+
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(ShowDemandText());
+        NewProfessor();
     }
 
-    // Update is called once per frame
-    void Update()
+    //새로운 의뢰 받기
+    public void NewProfessor()
     {
-        
+        demand.SetActive(false);
+        answer1.SetActive(false);
+        answer2.SetActive(false);
+
+        tryCount = 0;
+        GameManager.Instance.demandNum++;
+        if(GameManager.Instance.demandNum > 3)
+        {
+            Debug.Log("오늘 하루 의뢰 끝!");
+        }
+        StartCoroutine("ShowDemandText");
+        demand.GetComponent<Demands>().NewDemand();
     }
 
     //처음에 말풍선 생성
     IEnumerator ShowDemandText()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
         demand.SetActive(true);
 
         yield return new WaitForSeconds(1.0f);
@@ -32,14 +45,22 @@ public class Professor : MonoBehaviour
         answer2.SetActive(true);
     }
 
-    //요구 수락 했을 시 말풍선 제거
+    //요구 수락 했을 시 말풍선 제거(버튼)
     public void InactiveDemandUI()
     {
+        //의뢰 거절
+        if(answer2.GetComponentInChildren<Text>().text == "그건 좀 어려울 것 같습니다 교수님")
+        {
+            NewProfessor();
+
+        }
+
         //demand.SetActive(false);
         answer1.SetActive(false);
         answer2.SetActive(false);
     }
 
+    //약 조합 버튼 클릭 시 정답 비교(버튼)
     public void CompareMedi()
     {
         MediManager mediManager = GameObject.Find("MediManager").GetComponent<MediManager>();
@@ -48,10 +69,19 @@ public class Professor : MonoBehaviour
         if(mediManager.makedMedi.name == demandMedi.mediNum.ToString())
         {
             Debug.Log("조합 성공!");
+            GameManager.Instance.AddScore(demandMedi.demandCount);
+            StopCoroutine("ShowDemandText");
+            NewProfessor();
         }
         else
         {
             Debug.Log("조합 실패!");
+            tryCount++;
+            if(tryCount >= 2)
+            {
+                StopCoroutine("ShowDemandText");
+                NewProfessor();
+            }
         }
     }
 
