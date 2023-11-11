@@ -15,5 +15,6 @@ MonoBehaviour:
   mediCode: 15
   mediName: "\uC218\uBA74\uC81C"
   shortDescription: "7\uC2DC\uAC04 \uC9C8 \uC88B\uC740 \uC219\uBA74\uC744 \uBCF4\uC7A5\uD569\uB2C8\uB2E4."
-  longDescription: 
+  longDescription: "7\uC2DC\uAC04\uC758 \uC9C8 \uC88B\uC740 \uC219\uBA74\uC744 \uBCF4\uC7A5\uD569\uB2C8\uB2E4. 
+    \uB2E8, \uC815\uD655\uD788 7\uC2DC\uAC04 \uD6C4\uC5D0 \uAE68\uAC8C \uB429\uB2C8\uB2E4."
   sprite: {fileID: 0}
