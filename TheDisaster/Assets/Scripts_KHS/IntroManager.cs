@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class IntroManager : MonoBehaviour
 {
@@ -53,7 +52,6 @@ public class IntroManager : MonoBehaviour
     //모든 텍스트가 표시된 후 메인 씬으로 이동
     public void skipToMainScene()
     {
-        GameManager.Instance.FadeOut();
-        SceneManager.LoadScene("Main");
+        GameManager.Instance.LoadScene("Main");
     }
 }
