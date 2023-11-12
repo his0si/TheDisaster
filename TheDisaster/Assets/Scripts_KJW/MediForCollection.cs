@@ -21,13 +21,12 @@ public class MediForCollection : MonoBehaviour
 
     public void Show()
     {
-        this.GetComponent<Image>().sprite = mediSprite;
-        this.GetComponent<Image>().SetNativeSize();
-
-        if(!(PlayerPrefs.GetInt(mediRecipe.medisList[int.Parse(gameObject.name)].name) == 1))
+        if (!(PlayerPrefs.GetInt(mediRecipe.medisList[int.Parse(gameObject.name)].name) == 1))
         {
             GetComponent<Button>().interactable = false;
         }
+        this.GetComponent<Image>().sprite = mediSprite;
+        this.GetComponent<Image>().SetNativeSize();
     }
 
     public void ClickMedi()
