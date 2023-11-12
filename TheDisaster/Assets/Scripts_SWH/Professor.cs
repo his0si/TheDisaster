@@ -65,7 +65,7 @@ public class Professor : MonoBehaviour
         }
         else if(GameManager.Instance.dayNum == 2)
         {
-            demandTxt.text = "벌써 대회가 내일이야. 오늘도 잘 할 수 있겠지?";
+            demandTxt.text = "벌써 대회가 내일이야. 오늘도 잘할 수 있겠지?";
         }
         else if(GameManager.Instance.dayNum == 3)
         {
@@ -113,7 +113,7 @@ public class Professor : MonoBehaviour
         }
         else if(GameManager.Instance.dayNum == 1)
         {
-            demandTxt.text = "우는 소리 하지 말게나! 바로 시작하지!";
+            demandTxt.text = "우는소리 하지 말게나! 바로 시작하지!";
             StartCoroutine("InActiveStartAnswer");
         }
         else if(GameManager.Instance.dayNum == 2)
