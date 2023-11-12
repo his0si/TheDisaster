@@ -21,7 +21,7 @@ public class MediManager : MonoBehaviour
     {
         ResetMaterials();
         mediRecipe = GetComponent<MediRecipe>();
-        makedMediImg = makingAni.transform.GetChild(3).GetChild(0).GetComponent<Image>();
+        makedMediImg = makingAni.transform.GetChild(3).GetChild(0).GetChild(0).GetComponent<Image>();
         makedMediName = makingAni.transform.GetChild(3).GetChild(1).GetComponent<Text>();
         makedMediDiscription = makingAni.transform.GetChild(3).GetChild(2).GetComponent<Text>();
         selectAudioSource = GetComponent<AudioSource>();

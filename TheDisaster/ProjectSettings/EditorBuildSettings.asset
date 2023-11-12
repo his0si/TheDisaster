@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/0.FirstStart.unity
+    guid: 2b1d71cc7b682084eb1742435fb5705d
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 9f02f6042e38cd8408579573af07a470
@@ -15,17 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: d335651915688e84791ca1fa32aed16a
   - enabled: 1
+    path: Assets/Scenes/Collection.unity
+    guid: 2aa2b21a41ca6f04d9dbe1ad7863f4e2
+  - enabled: 0
     path: Assets/Scenes/Demand.unity
     guid: d942e7ea683abb34db5dce7de57e2a11
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MediMaking.unity
     guid: 81f80b6f92a7a544ea83fb9dfc825e1d
   - enabled: 1
     path: Assets/Scenes/Day1.unity
     guid: ca3c633746456484bb83255fae81ebc0
-  - enabled: 1
-    path: Assets/Scenes/Collection.unity
-    guid: 2aa2b21a41ca6f04d9dbe1ad7863f4e2
   - enabled: 1
     path: Assets/Scenes/ending.unity
     guid: 5c22a64173ae49640a0cfb9be2e81ef6
@@ -36,11 +39,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Day2.unity
     guid: d25e88a352458e5458b78d18edfb5408
   - enabled: 1
-    path: Assets/Scenes/Day3.unity
-    guid: 3627b2198c1b00d4c8e7628491fb352a
-  - enabled: 1
     path: Assets/Scenes/NextDay2.unity
     guid: bfe99960a9e66cc4f82124511bcb8bd2
+  - enabled: 1
+    path: Assets/Scenes/Day3.unity
+    guid: 3627b2198c1b00d4c8e7628491fb352a
   - enabled: 1
     path: Assets/Scenes/NextDay3.unity
     guid: b12a79eae654542499e4dc0aaa44f291
