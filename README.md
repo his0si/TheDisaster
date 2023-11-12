@@ -1,3 +1,34 @@
 # TheDisaster
 
-[TheDisaster.pdf](https://github.com/his0si/TheDisaster/files/13327535/TheDisaster.pdf)
+이화여자대학교 마법학부 마법약학과 박사과정생 이화연!
+
+“화연 군, 3일 뒤 대회가 있는데… 마법약을 만들어 볼 수 있겠나?”
+
+교수의 제안은 그야말로 재난이 따로 없었는데…
+
+그러나 대학원생이란 코끼리도 냉장고에 넣을 줄 알아야 하는 법!
+
+그렇게 시작된 3일 간의 특훈!
+
+대회에서 우승을 거머쥐도록 하자!
+
+게임 제목: 마법약학과 이화연의 재난
+- 게임 장르: 수집형 캐주얼 시뮬레이션 
+- 개발 툴: UNITY 2D
+- 플랫폼: 모바일
+- 해상도: 가로 / 1920*1080
+  
+<details>
+<summary> 다운로드 링크 </summary>
+<div markdown="1">    
+  
+ https://itch.io/jam/4thmakingjam/rate/2363108
+  
+</div>
+</details>
+
+<details>
+<summary> 마법약학과 이화연의 재난 pdf </summary>
+<div markdown="1">    
+  
+ [T
