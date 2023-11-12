@@ -33,7 +33,6 @@ public class EndingCollection : MonoBehaviour
             this.GetComponent<Image>().sprite = endingSprite;
             this.GetComponent<Image>().SetNativeSize();
         }
-        else GetComponent<Button>().interactable = false;
     }
 
     public void ClickEnding()

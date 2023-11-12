@@ -52,10 +52,6 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
-    {
-        StartCoroutine(FadeInCoroutine());
-    }
 
     public void LoadScene(string sceneName) 
     {
