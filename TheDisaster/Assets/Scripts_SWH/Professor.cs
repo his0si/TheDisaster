@@ -15,6 +15,8 @@ public class Professor : MonoBehaviour
     public GameObject nextBtn;
     public GameObject endBtn;
 
+    public GameObject contest;
+
     int a=0;
     int todayDemandNum;
 
@@ -64,6 +66,10 @@ public class Professor : MonoBehaviour
         else if(GameManager.Instance.dayNum == 2)
         {
             demandTxt.text = "벌써 대회가 내일이야. 오늘도 잘 할 수 있겠지?";
+        }
+        else if(GameManager.Instance.dayNum == 3)
+        {
+            demandTxt.text = "자, 오늘 해낼 수 있겠지?";
         }
 
         yield return new WaitForSeconds(1.0f);
@@ -115,6 +121,11 @@ public class Professor : MonoBehaviour
             demandTxt.text = "허허, 벌써부터 기대하고 있구먼!";
             StartCoroutine("InActiveStartAnswer");
         }
+        else if (GameManager.Instance.dayNum == 3)
+        {
+            demandTxt.text = "기합!! 아자!!";
+            StartCoroutine("InActiveStartAnswer");
+        }
     }
 
     public void StartAnswer2()
@@ -142,6 +153,11 @@ public class Professor : MonoBehaviour
             demandTxt.text = "그래, 꼭 우승을 해보도록 하자고!";
             StartCoroutine("InActiveStartAnswer");
         }
+        else if (GameManager.Instance.dayNum == 3)
+        {
+            demandTxt.text = "그 기세로 우승까지 가보세나!";
+            StartCoroutine("InActiveStartAnswer");
+        }
 
     }
     IEnumerator InActiveStartAnswer()
@@ -156,12 +172,19 @@ public class Professor : MonoBehaviour
             demandTxt.text = "그렇다면 좋은 성과를 기대하겠네.";
             yield return new WaitForSeconds(2.0f);
             demand.SetActive(false);
+            Invoke("NewProfessor", 2.0f);
+        }
+        else if(GameManager.Instance.dayNum == 3)
+        {
+            contest.SetActive(true);
+            gameObject.SetActive(false);
         }
         else
         {
             demand.SetActive(false);
+            Invoke("NewProfessor", 2.0f);
         }
-        Invoke("NewProfessor", 2.0f);
+        
     }
 
     //처음에 의뢰 말풍선 생성
@@ -220,7 +243,7 @@ public class Professor : MonoBehaviour
             GameManager.Instance.AddScore(demandMedi.demandCount);
             GameManager.Instance.isSucess.Add(true);
             StopCoroutine("ShowDemandText");
-            
+
             InactiveDemandUI();
             mediManager.makingAni.SetActive(false);
 
@@ -242,7 +265,7 @@ public class Professor : MonoBehaviour
             InactiveDemandUI();
             mediManager.makingAni.SetActive(false);
 
-            if(demandMedi.isSecond == false)
+            if (demandMedi.isSecond == false)
             {
                 int i = Random.Range(0, demandMedi.fail1Msg.Length);
                 demandMedi.demandText.text = demandMedi.fail1Msg[i];
@@ -258,5 +281,29 @@ public class Professor : MonoBehaviour
 
             Invoke("NewProfessor", 2.0f);
         }
+
+    }
+    public void AfterContest(bool isCorrect)
+    {
+        if(isCorrect == true)
+        {
+            demand.SetActive(true);
+            demandTxt.text = "아주 훌륭해! 자네는 인재일세! 나의 뒤를 이을 인재야! 내일부터 아침 9시까지 연구실로 출근하도록 하게나!!";
+            demandTxt.fontSize = 34;
+        }
+        else if(isCorrect == false)
+        {
+            demand.SetActive(true);
+            demandTxt.text = "비록 나는 내일 방 교수에게 술을 사게 되었지만… 괜찮다네. 내일부터 아침 9시까지 연구실로 오도록.";
+            demandTxt.fontSize = 34;
+        }
+        //GameManager.Instance.Ending(isCorrect)
+        StartCoroutine("Ending");
+    }
+
+    IEnumerator Ending()
+    {
+        yield return new WaitForSeconds(3.0f);
+        GameManager.Instance.LoadScene("ending");
     }
 }
