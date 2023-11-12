@@ -56,10 +56,6 @@ public class Professor_Ham : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         demand.SetActive(true);
         HamDemand();
-        //demandTxt.text = "마법약학과배 박사생 대회를 개최하겠습니다.";
-
-        //yield return new WaitForSeconds(1.0f);
-        //nextBtn.SetActive(true);
     }
     public void HamDemand()
     {
@@ -98,9 +94,6 @@ public class Professor_Ham : MonoBehaviour
             demandTxt.text = correctMsg[hamDemandNum];
 
             yield return new WaitForSeconds(2.0f);
-/*            professor.SetActive(true);
-            professor.GetComponent<Professor>().AfterContest(true);
-            gameObject.SetActive(false);*/
         }
         else
         {
@@ -113,22 +106,17 @@ public class Professor_Ham : MonoBehaviour
             demandTxt.text = failMsg[hamDemandNum];
 
             yield return new WaitForSeconds(2.0f);
-/*            professor.SetActive(true);
-            professor.GetComponent<Professor>().AfterContest(false);
-            gameObject.SetActive(false);*/
         }
         demand.SetActive(false);
 
         float pos = rect.anchoredPosition.x;
         while(pos > -1300)
         {
-            //timer += Time.deltaTime;
             yield return new WaitForSeconds(0.01f);
             pos -= 5;
             rect.anchoredPosition = new Vector3(pos, rect.anchoredPosition.y);
 
         }
-        Debug.Log(gameObject.GetComponent<RectTransform>().anchoredPosition.x);
 
         yield return new WaitForSeconds(2.0f);
         professor.SetActive(true);

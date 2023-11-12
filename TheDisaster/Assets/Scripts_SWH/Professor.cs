@@ -289,12 +289,21 @@ public class Professor : MonoBehaviour
         {
             demand.SetActive(true);
             demandTxt.text = "아주 훌륭해! 자네는 인재일세! 나의 뒤를 이을 인재야! 내일부터 아침 9시까지 연구실로 출근하도록 하게나!!";
+            demandTxt.fontSize = 34;
         }
         else if(isCorrect == false)
         {
             demand.SetActive(true);
             demandTxt.text = "비록 나는 내일 방 교수에게 술을 사게 되었지만… 괜찮다네. 내일부터 아침 9시까지 연구실로 오도록.";
+            demandTxt.fontSize = 34;
         }
+        //GameManager.Instance.Ending(isCorrect)
+        StartCoroutine("Ending");
+    }
 
+    IEnumerator Ending()
+    {
+        yield return new WaitForSeconds(3.0f);
+        GameManager.Instance.LoadScene("ending");
     }
 }

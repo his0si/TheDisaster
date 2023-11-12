@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NextDay3.unity
     guid: b12a79eae654542499e4dc0aaa44f291
+  - enabled: 1
+    path: Assets/Scenes/DayFinal.unity
+    guid: e321e55928bb16d44ae7d3131a723dda
   m_configObjects: {}
