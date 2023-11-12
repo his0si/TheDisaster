@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public List<int> demandsList;
     public List<bool> isSucess;
 
+    public int endingNum;
+
     private string nextSceneStr;
     private Image fadePanel;
     private static GameManager _instance;
@@ -114,5 +116,42 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //엔딩 설정
+    public void Ending(bool isCorrect)
+    {
+        if (totalScore >= 7)
+        {
+            if (isCorrect)
+            {
+                endingNum = 1;
+            }
+            else
+            {
+                endingNum = 2;
+            }
+        }
+        else if (totalScore >= 4)
+        {
+            if (isCorrect)
+            {
+                endingNum = 3;
+            }
+            else
+            {
+                endingNum = 4;
+            }
+        }
+        else if (totalScore >= 0)
+        {
+            if (isCorrect)
+            {
+                endingNum = 5;
+            }
+            else
+            {
+                endingNum = 6;
+            }
+        }
+    }
 }
 
