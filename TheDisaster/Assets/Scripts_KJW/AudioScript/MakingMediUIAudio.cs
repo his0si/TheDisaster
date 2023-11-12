@@ -6,11 +6,10 @@ public class MakingMediUIAudio : MonoBehaviour
 {
     public AudioSource[] audioSource;
     
-    void Start()
+    void OnEnable()
     {
         Invoke("PlayNext1", 1.5f);
         StartCoroutine(AudioPlayClip(0));
-        
     }
 
     IEnumerator AudioPlayClip(int i)
@@ -23,6 +22,8 @@ public class MakingMediUIAudio : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
             audioSource[i].volume = volume;
         }
+        audioSource[i].Stop();
+        audioSource[i].volume = 1;
     }
 
     void PlayNext1()
