@@ -152,6 +152,8 @@ public class GameManager : MonoBehaviour
                 endingNum = 6;
             }
         }
+
+        PlayerPrefs.SetInt(endingNum.ToString(), 1);
     }
 }
 
