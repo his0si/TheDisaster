@@ -226,6 +226,7 @@ MonoBehaviour:
   likeability: 0
   demandsList: 
   isSucess: 
+  endingNum: 0
 --- !u!4 &366674669
 Transform:
   m_ObjectHideFlags: 0
@@ -1218,6 +1219,7 @@ GameObject:
   - component: {fileID: 1706771345}
   - component: {fileID: 1706771344}
   - component: {fileID: 1706771343}
+  - component: {fileID: 1706771347}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1307,6 +1309,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!320 &1706771347
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706771342}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: f732dce4beefea5489f4240707a52bd9, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1718445266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,7 +1520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &2054852917
 CanvasRenderer:
   m_ObjectHideFlags: 0
