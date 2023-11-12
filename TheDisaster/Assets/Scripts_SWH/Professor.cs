@@ -297,7 +297,7 @@ public class Professor : MonoBehaviour
             demandTxt.text = "비록 나는 내일 방 교수에게 술을 사게 되었지만… 괜찮다네. 내일부터 아침 9시까지 연구실로 오도록.";
             demandTxt.fontSize = 34;
         }
-        //GameManager.Instance.Ending(isCorrect)
+        GameManager.Instance.Ending(isCorrect);
         StartCoroutine("Ending");
     }
 
