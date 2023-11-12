@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b14d53a5c6f38439dc5becbe4ac784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Day2
+  nextScene: DayFinal
 --- !u!114 &1115859868
 MonoBehaviour:
   m_ObjectHideFlags: 0
