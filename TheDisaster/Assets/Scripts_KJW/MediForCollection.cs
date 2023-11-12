@@ -23,6 +23,11 @@ public class MediForCollection : MonoBehaviour
     {
         this.GetComponent<Image>().sprite = mediSprite;
         this.GetComponent<Image>().SetNativeSize();
+
+        if(!(PlayerPrefs.GetInt(mediRecipe.medisList[int.Parse(gameObject.name)].name) == 1))
+        {
+            GetComponent<Button>().interactable = false;
+        }
     }
 
     public void ClickMedi()
@@ -39,7 +44,7 @@ public class MediForCollection : MonoBehaviour
         collectionInfo.gameObject.SetActive(true);
         collectionInfo.infoImage.sprite = thisMedi.sprite;
         collectionInfo.infoImage.GetComponent<Image>().SetNativeSize();
-       collectionInfo.mediName.text = thisMedi.mediName;
+        collectionInfo.mediName.text = thisMedi.mediName;
         collectionInfo.description.text = thisMedi.longDescription;
         transform.parent.parent.GetComponent<Canvas>().sortingOrder = 10;
     }
