@@ -10,8 +10,9 @@ public class MediCollection : MonoBehaviour
     private void Start()
     {
         mediRecipe = GetComponent<MediRecipe>();
-        if (!PlayerPrefs.HasKey(mediRecipe.medisList[0].name))
+        if (!PlayerPrefs.HasKey(mediRecipe.medisList[0].mediCode.ToString()))
         {
+            Debug.Log("컬렉션 리셋");
             CollectionReset();
         }
         else ShowMediCollection();
@@ -22,21 +23,22 @@ public class MediCollection : MonoBehaviour
     {
         for(int i = 0; i<mediRecipe.medisList.Length; i++) 
         {
-            PlayerPrefs.SetInt(mediRecipe.medisList[i].name, 0);
+            PlayerPrefs.SetInt(mediRecipe.medisList[0].mediCode.ToString(), 0);
         }
     }
 
     private void ShowMediCollection()
     {
+        Debug.Log("컬렉션 보여줌");
         // 자식 오브젝트 모두 저장
-        for(int i = 0; i<mediRecipe.medisList.Length; i++)
+        for (int i = 0; i<mediRecipe.medisList.Length; i++)
         {
             medis[i] = transform.GetChild(i).gameObject;
         }
         // sprite 변경
         for(int i=0; i<mediRecipe.medisList.Length; i++)
         {
-            if (PlayerPrefs.GetInt(mediRecipe.medisList[i].name) == 1) // 수집됨
+            //if (PlayerPrefs.GetInt(mediRecipe.medisList[i].mediCode.ToString()) == 1) // 수집됨
                 medis[i].GetComponent<MediForCollection>().Show();
         }
 

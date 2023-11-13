@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
         float alpha = 0;
         while(alpha < 1.0f)
         {
-            alpha += 0.01f;
+            alpha += 0.03f;
             yield return new WaitForSeconds(0.01f);
             fadePanel.color = new Color(0,0,0, alpha);
         }
@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
         float alpha = 1;
         while (alpha > 0f)
         {
-            alpha -= 0.01f;
+            alpha -= 0.03f;
             yield return new WaitForSeconds(0.01f);
             fadePanel.color = new Color(0, 0, 0, alpha);
         }
