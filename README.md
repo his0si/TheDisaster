@@ -12,23 +12,18 @@
 
 대회에서 우승을 거머쥐도록 하자!
 
-게임 제목: 마법약학과 이화연의 재난
+### 마법약학과 이화연의 재난
 - 게임 장르: 수집형 캐주얼 시뮬레이션 
 - 개발 툴: UNITY 2D
 - 플랫폼: 모바일
 - 해상도: 가로 / 1920*1080
   
 <details>
-<summary> 다운로드 링크 </summary>
+<summary> 웹 플레이 및 다운로드 링크 </summary>
 <div markdown="1">    
   
- https://itch.io/jam/4thmakingjam/rate/2363108
+ https://hylee.itch.io/thedisaster
   
 </div>
 </details>
 
-<details>
-<summary> 마법약학과 이화연의 재난 pdf </summary>
-<div markdown="1">    
-  
- [T
