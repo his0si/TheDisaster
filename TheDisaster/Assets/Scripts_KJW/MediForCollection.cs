@@ -8,31 +8,34 @@ public class MediForCollection : MonoBehaviour
     public CollectionInfo collectionInfo;
     private MediRecipe mediRecipe;
     private Medi thisMedi;
-    public Sprite nullSprite;
-    private Sprite mediSprite;
+    public Sprite thisMediSprite;
     public GameObject blackPanel;
 
     void Start()
     {
         mediRecipe = transform.parent.GetComponent<MediRecipe>();
         thisMedi = mediRecipe.medisList[int.Parse(gameObject.name)];
-        mediSprite = thisMedi.sprite;
     }
 
     public void Show()
     {
-        this.GetComponent<Image>().sprite = mediSprite;
-        this.GetComponent<Image>().SetNativeSize();
-
-        if(!(PlayerPrefs.GetInt(mediRecipe.medisList[int.Parse(gameObject.name)].name) == 1))
+        if (PlayerPrefs.GetInt(name) == 0)
         {
+            Debug.Log(gameObject.name + "¾øÀ½");
             GetComponent<Button>().interactable = false;
+            // GetComponent<Button>().enabled = false;
+            GetComponent<Image>().SetNativeSize();
+        }
+        else
+        {
+            GetComponent<Image>().sprite = thisMediSprite;
+            GetComponent<Image>().SetNativeSize();
         }
     }
 
     public void ClickMedi()
     {
-        if(PlayerPrefs.GetInt(mediRecipe.medisList[int.Parse(gameObject.name)].name) == 1) 
+        if(PlayerPrefs.GetInt(thisMedi.mediCode.ToString()) == 1) 
         {
             blackPanel.SetActive(true);
             UpdateInfo();

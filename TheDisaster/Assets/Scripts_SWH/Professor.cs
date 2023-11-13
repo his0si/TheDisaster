@@ -243,7 +243,7 @@ public class Professor : MonoBehaviour
             GameManager.Instance.AddScore(demandMedi.demandCount);
             GameManager.Instance.isSucess.Add(true);
             StopCoroutine("ShowDemandText");
-
+            PlayerPrefs.SetInt(mediManager.makedMedi.name, 1); // jiwoo add
             InactiveDemandUI();
             mediManager.makingAni.SetActive(false);
 

@@ -44,23 +44,26 @@ public class MediManager : MonoBehaviour
         {
             Debug.Log("재료 더 필요");
         }
-        makedMedi = mediRecipe.makeMedi(selectedMaterial[0], selectedMaterial[1]);
-        //Debug.Log(makedMedi.name);
-        ResetMaterials();
-        //// 컬렉션 잠금 해제 
-        //PlayerPrefs.SetInt(makedMedi.name, 1);
-        //// for debug
-        //for(int i = 0; i < mediRecipe.medisList.Length; i++)
-        //{
-        //    Debug.Log(PlayerPrefs.GetInt(mediRecipe.medisList[i].name));
-        //}
-        selectAudioSource.Play();
+        else
+        {
+            makedMedi = mediRecipe.makeMedi(selectedMaterial[0], selectedMaterial[1]);
+            //Debug.Log(makedMedi.name);
+            ResetMaterials();
+            //// 컬렉션 잠금 해제 
+            //PlayerPrefs.SetInt(makedMedi.name, 1);
+            //// for debug
+            //for(int i = 0; i < mediRecipe.medisList.Length; i++)
+            //{
+            //    Debug.Log(PlayerPrefs.GetInt(mediRecipe.medisList[i].name));
+            //}
+            selectAudioSource.Play();
 
-        // 만들기 애니메이션 Start
-        makingAni.SetActive(true);
-        makedMediImg.sprite = makedMedi.sprite;
-        makedMediImg.SetNativeSize();
-        makedMediName.text = makedMedi.mediName;
-        makedMediDiscription.text = makedMedi.shortDescription;
+            // 만들기 애니메이션 Start
+            makingAni.SetActive(true);
+            makedMediImg.sprite = makedMedi.sprite;
+            makedMediImg.SetNativeSize();
+            makedMediName.text = makedMedi.mediName;
+            makedMediDiscription.text = makedMedi.shortDescription;
+        }
     }
 }
