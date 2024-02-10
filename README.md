@@ -17,12 +17,23 @@
 - 개발 툴: UNITY 2D
 - 플랫폼: 모바일
 - 해상도: 가로 / 1920*1080
-  
+
+https://github.com/his0si/TheDisaster/assets/123148738/387339ca-637d-4ded-9363-c3abfb238e1d
+
 <details>
 <summary> 웹 플레이 및 다운로드 링크 </summary>
 <div markdown="1">    
   
  https://hylee.itch.io/thedisaster
+  
+</div>
+</details>
+
+<details>
+<summary> 해커톤 발표 자료 </summary>
+<div markdown="1">    
+  
+[TheDisaster.pdf](https://github.com/his0si/TheDisaster/files/14229611/TheDisaster.pdf)
   
 </div>
 </details>
